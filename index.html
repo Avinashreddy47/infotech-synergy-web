@@ -3,29 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InfoTech Synergy</title>
+    <title>InfoTech Synergy - Innovative Technology Solutions</title>
+    <meta
+      name="description"
+      content="Leading provider of innovative technology solutions, software development, cloud services, and IT consulting."
+    />
     <link rel="stylesheet" href="public/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#!">Home</a></li>
-        <li><a href="#!services">Services</a></li>
-        <li><a href="#!about">About</a></li>
-        <li><a href="#!contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div ng-view></div>
-
-    <footer>
+    <!-- Header -->
+    <header class="header">
       <div class="container">
-        <p>&copy; 2024 InfoTech Synergy. All rights reserved.</p>
+        <div class="header-content">
+          <div class="logo">
+            <a href="#!">
+              <span class="logo-text">InfoTech</span>
+              <span class="logo-accent">Synergy</span>
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#!" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#!services" class="nav-link">Services</a></li>
+              <li class="nav-item"><a href="#!about" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#!contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#!contact" class="btn btn-primary">Get Started</a>
+          </nav>
+          <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-list">
+        <li><a href="#!" onclick="toggleMobileMenu()">Home</a></li>
+        <li><a href="#!services" onclick="toggleMobileMenu()">Services</a></li>
+        <li><a href="#!about" onclick="toggleMobileMenu()">About</a></li>
+        <li><a href="#!contact" onclick="toggleMobileMenu()">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div ng-view></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-title">InfoTech Synergy</h3>
+            <p class="footer-text">
+              Empowering businesses with innovative technology solutions for a digital future.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#!services">Software Development</a></li>
+              <li><a href="#!services">Cloud Solutions</a></li>
+              <li><a href="#!services">IT Consulting</a></li>
+              <li><a href="#!services">Cybersecurity</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#!about">About Us</a></li>
+              <li><a href="#!contact">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Contact</h4>
+            <ul class="footer-contact">
+              <li>📧 info@infotechsynergy.com</li>
+              <li>📞 +1 (555) 123-4567</li>
+              <li>📍 123 Tech Street, Silicon Valley, CA 94025</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 InfoTech Synergy. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
       </div>
     </footer>
 
     <script src="public/app.js"></script>
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>

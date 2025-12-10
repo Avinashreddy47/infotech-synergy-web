@@ -1,36 +1,133 @@
-<div class="container">
-  <h1>{{message}}</h1>
-  <div class="about-content">
-    <div class="mission">
-      <h2>Our Mission</h2>
-      <p>
-        To empower businesses through innovative technology solutions that drive growth and success
-        in the digital age.
-      </p>
-    </div>
-    <div class="values">
-      <h2>Our Values</h2>
-      <ul>
-        <li>
-          <h3>Innovation</h3>
-          <p>Constantly pushing boundaries to deliver cutting-edge solutions</p>
-        </li>
-        <li>
-          <h3>Integrity</h3>
-          <p>Maintaining the highest standards of professional ethics</p>
-        </li>
-        <li>
-          <h3>Excellence</h3>
-          <p>Striving for perfection in everything we do</p>
-        </li>
-      </ul>
-    </div>
-    <div class="team">
-      <h2>Our Team</h2>
-      <p>
-        Our team consists of passionate technology experts with diverse skills and extensive
-        industry experience, dedicated to delivering exceptional results for our clients.
-      </p>
+<!-- About Hero -->
+<section class="hero" style="padding: 4rem 0">
+  <div class="container">
+    <div class="hero-content">
+      <h1>About InfoTech Synergy</h1>
+      <p>Pioneering innovation and excellence in technology solutions since 2010</p>
     </div>
   </div>
-</div>
+</section>
+
+<!-- About Content Section -->
+<section class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>{{aboutTitle}}</h2>
+        <p>{{aboutDescription1}}</p>
+        <p>{{aboutDescription2}}</p>
+        <p>{{aboutDescription3}}</p>
+      </div>
+      <div class="about-image">🏢</div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Mission & Vision</h2>
+      <p class="section-subtitle">
+        Driving digital transformation through innovation and excellence
+      </p>
+    </div>
+    <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))">
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Our Mission</h3>
+        <p>
+          To empower businesses with cutting-edge technology solutions that drive growth,
+          efficiency, and innovation. We are committed to delivering exceptional value through our
+          expertise, dedication, and customer-centric approach.
+        </p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3>Our Vision</h3>
+        <p>
+          To be the global leader in technology innovation, recognized for transforming businesses
+          and shaping the future of digital solutions. We envision a world where technology
+          seamlessly integrates with business to create unlimited possibilities.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values Section -->
+<section class="about-section" style="background: var(--bg-secondary)">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Core Values</h2>
+      <p class="section-subtitle">The principles that guide everything we do</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card" ng-repeat="value in values">
+        <h4>{{value.title}}</h4>
+        <p>{{value.description}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Meet Our Leadership Team</h2>
+      <p class="section-subtitle">Experienced professionals dedicated to your success</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-member" ng-repeat="member in team">
+        <div class="team-photo">{{member.icon}}</div>
+        <div class="team-info">
+          <h4>{{member.name}}</h4>
+          <p>{{member.position}}</p>
+          <p style="font-size: 0.9rem; color: var(--text-light)">{{member.bio}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="container">
+    <div class="section-header" style="color: white; margin-bottom: 3rem">
+      <h2 class="section-title" style="color: white">Our Impact in Numbers</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>500+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-item">
+        <h3>200+</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-item">
+        <h3>50+</h3>
+        <p>Team Members</p>
+      </div>
+      <div class="stat-item">
+        <h3>15+</h3>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Join Us on Our Journey</h2>
+      <p>Be part of the future of technology innovation</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap">
+        <a href="#!contact" class="btn btn-secondary btn-large">Partner With Us</a>
+        <a href="#!services" class="btn btn-primary btn-large">View Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,18 +1,80 @@
-<div class="container">
-  <h1>{{message}}</h1>
-  <p>Welcome to InfoTech Synergy, your trusted partner in innovative technology solutions.</p>
-  <div class="features">
-    <div class="feature">
-      <h3>Innovation</h3>
-      <p>Cutting-edge solutions for modern challenges</p>
-    </div>
-    <div class="feature">
-      <h3>Excellence</h3>
-      <p>Committed to delivering quality results</p>
-    </div>
-    <div class="feature">
-      <h3>Partnership</h3>
-      <p>Building lasting relationships with our clients</p>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>{{heroTitle}}</h1>
+      <p>{{heroSubtitle}}</p>
+      <div class="hero-buttons">
+        <a href="#!services" class="btn btn-primary btn-large">Explore Services</a>
+        <a href="#!contact" class="btn btn-secondary btn-large">Get in Touch</a>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Why Choose InfoTech Synergy?</h2>
+      <p class="section-subtitle">
+        We deliver cutting-edge technology solutions that drive business growth and digital
+        transformation
+      </p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card" ng-repeat="feature in features">
+        <div class="feature-icon">{{feature.icon}}</div>
+        <h3>{{feature.title}}</h3>
+        <p>{{feature.description}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item" ng-repeat="stat in stats">
+        <h3>{{stat.value}}</h3>
+        <p>{{stat.label}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Preview Section -->
+<section class="services-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Core Services</h2>
+      <p class="section-subtitle">
+        Comprehensive technology solutions tailored to your business needs
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" ng-repeat="service in servicesPreview">
+        <div class="service-header">
+          <div class="service-icon">{{service.icon}}</div>
+          <h3>{{service.title}}</h3>
+        </div>
+        <div class="service-body">
+          <p>{{service.description}}</p>
+          <a href="#!services" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Transform Your Business?</h2>
+      <p>Let's discuss how we can help you achieve your technology goals</p>
+      <a href="#!contact" class="btn btn-secondary btn-large">Start Your Project</a>
+    </div>
+  </div>
+</section>
