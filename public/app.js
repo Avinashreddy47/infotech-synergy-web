@@ -257,7 +257,7 @@ app.controller('AboutController', function ($scope) {
       bio: 'Building and nurturing our talented team',
     },
     {
-      name: 'Mydhili Priya',
+      name: 'Mydhili Priya Bellapukonda',
       position: 'Product Owner',
       icon: '👩‍💻',
       bio: 'Driving product strategy and innovation',
