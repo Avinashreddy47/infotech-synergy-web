@@ -256,6 +256,12 @@ app.controller('AboutController', function ($scope) {
       icon: '👨‍💼',
       bio: 'Building and nurturing our talented team',
     },
+    {
+      name: 'Mydhili Priya',
+      position: 'Product Owner',
+      icon: '👩‍💻',
+      bio: 'Driving product strategy and innovation',
+    },
   ];
 });
 
