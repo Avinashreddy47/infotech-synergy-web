@@ -67,10 +67,10 @@ app.controller('HomeController', function ($scope) {
   ];
 
   $scope.stats = [
-    { value: '500+', label: 'Projects Delivered' },
-    { value: '200+', label: 'Happy Clients' },
-    { value: '50+', label: 'Expert Team' },
-    { value: '15+', label: 'Years Experience' },
+    { value: '1+', label: 'Projects Delivered' },
+    { value: '1+', label: 'Happy Clients' },
+    { value: '3+', label: 'Expert Team' },
+    { value: '2+', label: 'Years Experience' },
   ];
 
   $scope.servicesPreview = [
@@ -87,10 +87,10 @@ app.controller('HomeController', function ($scope) {
         'Scalable cloud infrastructure and migration services to optimize performance, reduce costs, and enhance flexibility',
     },
     {
-      icon: '🔐',
-      title: 'Cybersecurity',
+      icon: '🎯',
+      title: 'IT Consulting',
       description:
-        'Comprehensive security solutions to protect your digital assets, data, and infrastructure from cyber threats',
+        'Strategic technology guidance to help you make informed decisions and create roadmaps for digital transformation',
     },
   ];
 });
@@ -144,21 +144,6 @@ app.controller('ServicesController', function ($scope) {
       ],
     },
     {
-      icon: '🔐',
-      title: 'Cybersecurity',
-      tagline: 'Protecting Your Digital Assets',
-      description:
-        'Safeguard your business with our comprehensive cybersecurity services. We implement robust security measures, conduct assessments, and provide ongoing monitoring to protect against evolving threats.',
-      features: [
-        'Security Audits & Assessments',
-        'Penetration Testing',
-        'Security Architecture Design',
-        'Incident Response Planning',
-        'Compliance Management',
-        '24/7 Security Monitoring',
-      ],
-    },
-    {
       icon: '📊',
       title: 'Data Analytics',
       tagline: 'Insights That Drive Decisions',
@@ -171,21 +156,6 @@ app.controller('ServicesController', function ($scope) {
         'Real-time Dashboards',
         'Machine Learning Models',
         'Data Visualization',
-      ],
-    },
-    {
-      icon: '📱',
-      title: 'Mobile Development',
-      tagline: 'Apps That Users Love',
-      description:
-        'Create engaging mobile experiences with our native and cross-platform app development services. We build intuitive, high-performance mobile applications for iOS and Android.',
-      features: [
-        'Native iOS & Android Apps',
-        'Cross-Platform Development',
-        'Mobile UI/UX Design',
-        'App Store Optimization',
-        'Mobile Backend Services',
-        'App Maintenance & Support',
       ],
     },
   ];
@@ -275,28 +245,16 @@ app.controller('AboutController', function ($scope) {
 
   $scope.team = [
     {
-      name: 'Sarah Johnson',
-      position: 'Chief Executive Officer',
+      name: 'Sri Sagari Bhaskar',
+      position: 'Principal Agent',
       icon: '👩‍💼',
-      bio: '15+ years leading technology companies',
+      bio: 'Leading InfoTech Synergy with vision and expertise',
     },
     {
-      name: 'Michael Chen',
-      position: 'Chief Technology Officer',
-      icon: '👨‍💻',
-      bio: 'Expert in cloud architecture and AI',
-    },
-    {
-      name: 'Emily Rodriguez',
-      position: 'VP of Engineering',
-      icon: '👩‍🔬',
-      bio: 'Passionate about building great teams',
-    },
-    {
-      name: 'David Kim',
-      position: 'Head of Security',
-      icon: '👨‍🔒',
-      bio: 'Cybersecurity specialist with 12+ years',
+      name: 'Kaushl Bhaskar',
+      position: 'HR Director',
+      icon: '👨‍💼',
+      bio: 'Building and nurturing our talented team',
     },
   ];
 });
