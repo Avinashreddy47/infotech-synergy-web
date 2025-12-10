@@ -1,0 +1,24 @@
+{
+  "name": "infotech-synergy-website",
+  "version": "1.0.0",
+  "description": "InfoTech Synergy - Professional IT Solutions & Services",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [
+    "infotech",
+    "synergy",
+    "it-solutions",
+    "website"
+  ],
+  "author": "InfoTech Synergy",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
