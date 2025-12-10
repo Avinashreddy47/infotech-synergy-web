@@ -67,9 +67,9 @@ app.controller('HomeController', function ($scope) {
   ];
 
   $scope.stats = [
-    { value: '1+', label: 'Projects Delivered' },
+    { value: '1+', label: 'Projects Completed' },
     { value: '1+', label: 'Happy Clients' },
-    { value: '3+', label: 'Expert Team' },
+    { value: '2+', label: 'Team Members' },
     { value: '2+', label: 'Years Experience' },
   ];
 
@@ -245,12 +245,6 @@ app.controller('AboutController', function ($scope) {
 
   $scope.team = [
     {
-      name: 'Sri Sagari Bhaskar',
-      position: 'Principal Agent',
-      icon: '👩‍💼',
-      bio: 'Leading InfoTech Synergy with vision and expertise',
-    },
-    {
       name: 'Kaushl Bhaskar',
       position: 'HR Director',
       icon: '👨‍💼',
@@ -258,7 +252,7 @@ app.controller('AboutController', function ($scope) {
     },
     {
       name: 'Mydhili Priya Bellapukonda',
-      position: 'Product Owner',
+      position: 'Product Manager',
       icon: '👩‍💻',
       bio: 'Driving product strategy and innovation',
     },
