@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="infotechApp">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +8,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
   </head>
-  <body ng-app="infotechApp">
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!services">Services</a></li>
+        <li><a href="#!about">About</a></li>
+        <li><a href="#!contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <div ng-view></div>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 InfoTech Synergy. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="public/app.js"></script>
   </body>
 </html>
